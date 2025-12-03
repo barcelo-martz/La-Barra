@@ -1,0 +1,1463 @@
+[
+  
+  {
+    "nombre": "Bling! Bling!",
+    "descripcion": "Cóctel chispeante con vodka y burbujas",
+    "categoria": "Shots",
+    "ingredientes": ["Vodka", "Champán", "Jugo de piña", "Jarabe simple"],
+    "preparacion": "Agitar vodka, jugo y jarabe con hielo; colar en copa y completar con champán.",
+    "herramientas": ["Coctelera", "Copa de champán"],
+    "imagen": "assets/images/bling_bling.jpg"
+  },
+  {
+    "nombre": "Verdita",
+    "descripcion": "Shot verde herbal y picante",
+    "categoria": "Shots",
+    "ingredientes": ["Cilantro", "Menta", "Jalapeño", "Piña", "Lima", "Sal"],
+    "preparacion": "Licuar todos los ingredientes frescos y servir frío en vaso de shot.",
+    "herramientas": ["Licuadora", "Vaso de shot"],
+    "imagen": "assets/images/verdita.png"
+  },
+  {
+    "nombre": "Mini Margarita",
+    "descripcion": "Shot de la clásica margarita con tequila y cítricos",
+    "categoria": "Shots",
+    "ingredientes": ["Tequila", "Triple sec", "Jugo de lima", "Sal para el borde"],
+    "preparacion": "Agitar con hielo y servir en vaso pequeño con borde de sal.",
+    "herramientas": ["Coctelera", "Vaso de shot"],
+    "imagen": "assets/images/mini_margarita.png"
+  },
+  {
+    "nombre": "Pinga com Mel",
+    "descripcion": "Shot brasileño de cachaça con miel",
+    "categoria": "Shots",
+    "ingredientes": ["Cachaça", "Miel"],
+    "preparacion": "Mezclar directamente en el vaso de shot y servir.",
+    "herramientas": ["Vaso de shot"],
+    "imagen": "assets/images/pinga_com_mel.jpg"
+  },
+  {
+    "nombre": "CIA",
+    "descripcion": "Shot intenso con vodka y café",
+    "categoria": "Shots",
+    "ingredientes": ["Vodka", "Licor de café", "Espresso"],
+    "preparacion": "Agitar con hielo y servir en vaso de shot.",
+    "herramientas": ["Coctelera", "Vaso de shot"],
+    "imagen": "assets/images/cia.webp"
+  },
+  {
+    "nombre": "Poleaxe",
+    "descripcion": "Shot potente con whisky y notas herbales",
+    "categoria": "Shots",
+    "ingredientes": ["Whisky", "Licor herbal"],
+    "preparacion": "Servir directamente en vaso de shot.",
+    "herramientas": ["Vaso de shot"],
+    "imagen": "assets/images/Poleaxe.jpg"
+  },
+  {
+    "nombre": "Boilermaker",
+    "descripcion": "Clásico combinado de cerveza y whisky",
+    "categoria": "Tradicionales",
+    "ingredientes": ["Cerveza", "Whisky"],
+    "preparacion": "Servir un vaso de cerveza acompañado de un shot de whisky.",
+    "herramientas": ["Vaso de cerveza", "Vaso de shot"],
+    "imagen": "assets/images/Boilermaker.jpg"
+  },
+  {
+    "nombre": "Sangrita",
+    "descripcion": "Acompañante tradicional del tequila con jugos y especias",
+    "categoria": "Tradicionales",
+    "ingredientes": ["Jugo de tomate", "Jugo de naranja", "Granadina", "Salsa picante", "Sal"],
+    "preparacion": "Mezclar todos los ingredientes y servir frío en vaso pequeño.",
+    "herramientas": ["Jarra", "Vaso de shot"],
+    "imagen": "assets/images/Sangrita.jpg"
+  },
+  {
+    "nombre": "B-52 Shot",
+    "descripcion": "Shot en capas con café, crema y naranja",
+    "categoria": "Shots",
+    "ingredientes": ["Licor de café", "Licor de crema irlandesa", "Licor de naranja"],
+    "preparacion": "Servir cuidadosamente en capas en vaso de shot.",
+    "herramientas": ["Cuchara de bar", "Vaso de shot"],
+    "imagen": "assets/images/B-52_Shot.jpg"
+  },
+  {
+    "nombre": "Hard Start",
+    "descripcion": "Shot energético simple",
+    "categoria": "Shots",
+    "ingredientes": ["Vodka", "Bebida energética"],
+    "preparacion": "Mezclar y servir frío.",
+    "herramientas": ["Coctelera", "Vaso de shot"],
+    "imagen": "assets/images/Hard_Start.webp"
+  },
+  {
+    "nombre": "Opal Café",
+    "descripcion": "Cóctel de café con perfil dulce",
+    "categoria": "Modernos",
+    "ingredientes": ["Espresso", "Licor de café", "Crema"],
+    "preparacion": "Agitar con hielo y servir en copa.",
+    "herramientas": ["Coctelera", "Copa"],
+    "imagen": "assets/images/Opal_Café.webp"
+  },
+  {
+    "nombre": "Damson in Distress",
+    "descripcion": "Cóctel afrutado de ciruela damson con gin",
+    "categoria": "Modernos",
+    "ingredientes": ["Licor de ciruela damson", "Gin", "Jugo de limón"],
+    "preparacion": "Agitar con hielo y servir en copa.",
+    "herramientas": ["Coctelera", "Copa"],
+    "imagen": "assets/images/Damson_in_Distress.webp"
+  },
+  {
+    "nombre": "Apollo 8",
+    "descripcion": "Cóctel azul cítrico con vodka y curaçao",
+    "categoria": "Modernos",
+    "ingredientes": ["Vodka", "Curaçao azul", "Jugo de limón"],
+    "preparacion": "Agitar con hielo y servir en copa.",
+    "herramientas": ["Coctelera", "Copa"],
+    "imagen": "assets/images/Apollo.webp"
+  },
+  {
+    "nombre": "Kamikaze",
+    "descripcion": "Shot clásico cítrico",
+    "categoria": "Shots",
+    "ingredientes": ["Vodka", "Triple sec", "Jugo de lima"],
+    "preparacion": "Agitar con hielo y servir en vaso de shot.",
+    "herramientas": ["Coctelera", "Vaso de shot"],
+    "imagen": "assets/images/Kamikaze.jpg"
+  },
+  {
+    "nombre": "Shaft",
+    "descripcion": "Cóctel de café con vodka",
+    "categoria": "Modernos",
+    "ingredientes": ["Espresso", "Licor de café", "Vodka"],
+    "preparacion": "Agitar con hielo y servir en copa.",
+    "herramientas": ["Coctelera", "Copa"],
+    "imagen": "assets/images/Shaft.jpg"
+  },
+  {
+    "nombre": "Buona Sera Shot",
+    "descripcion": "Shot italiano suave y cafetero",
+    "categoria": "Shots",
+    "ingredientes": ["Amaretto", "Espresso"],
+    "preparacion": "Mezclar y servir en vaso de shot.",
+    "herramientas": ["Coctelera", "Vaso de shot"],
+    "imagen": "assets/images/Buona_Sera_Shot.webp"
+  },
+  {
+  "nombre": "Bloody Mary",
+  "descripcion": "Cóctel clásico con vodka y jugo de tomate",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "50ml Vodka Smirnoff",
+    "150ml Zumo de Tomate",
+    "15ml Zumo Limón",
+    "3 Dashes Salsa Worcestershire",
+    "3 Dashes Salsa Tabasco",
+    "1ml Sal y Pimienta",
+    "1 Tallo de apio (garnish)"
+  ],
+  "preparacion": "Bordea el vaso con zumo de limón y pimienta; añade los ingredientes, mezcla y adorna con apio.",
+  "herramientas": [
+    "Vaso Highball",
+    "Vaso Mezclador",
+    "Colador de Gusanillo",
+    "Pinzas"
+  ],
+  "imagen": "assets/images/Bloody_Mary.jpg"
+},
+{
+  "nombre": "Caipirinha",
+  "descripcion": "Cóctel brasileño refrescante con cachaça, lima y azúcar",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "60ml Cachaça",
+    "1 Lima fresca",
+    "2 cucharaditas Azúcar blanco",
+    "Hielo en cubos o triturado"
+  ],
+  "preparacion": "Macerar la lima con azúcar en un vaso Old Fashioned, añadir hielo y cachaça, mezclar suavemente y servir adornado con rodaja de lima.",
+  "herramientas": [
+    "Vaso Old Fashioned",
+    "Mortero para cócteles (o cuchara robusta)"
+  ],
+  "imagen": "assets/images/Caipirinha.jpg"
+},
+{
+  "nombre": "Sidecar",
+  "descripcion": "Cóctel elegante con brandy, licor de naranja y un toque de bitters",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "60ml Brandy o Coñac",
+    "5ml Licor de Naranja (Cointreau/Triple Sec)",
+    "2 dashes Bitters de Angostura",
+    "1 cucharadita Sirope Simple (opcional)"
+  ],
+  "preparacion": "Mezclar todos los ingredientes con hielo en vaso de mezcla, remover 30 segundos, colar en copa fría y decorar con twist de naranja.",
+  "herramientas": [
+    "Vaso de mezcla",
+    "Cuchara larga",
+    "Colador",
+    "Copa de cóctel"
+  ],
+  "imagen": "assets/images/Sidecar.jpg"
+},
+{
+  "nombre": "Cosmopolitan",
+  "descripcion": "Cóctel moderno y vibrante con vodka, licor de naranja, lima y arándano",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "40ml Vodka",
+    "15ml Licor de Naranja",
+    "15ml Jugo de Lima Fresco",
+    "30ml Jugo de Arándano",
+    "1 Twist de cáscara de naranja"
+  ],
+  "preparacion": "Enfriar copa de martini, combinar vodka, licor de naranja, jugo de lima y arándano en coctelera con hielo, agitar 12-15 segundos, colar con doble colado en copa fría y decorar con twist de naranja.",
+  "herramientas": [
+    "Copa de martini",
+    "Pala de hielo",
+    "Jigger",
+    "Coctelera",
+    "Colador Hawthorne",
+    "Colador fino",
+    "Pinzas"
+  ],
+  "imagen": "assets/images/Cosmopolitan.jpg"
+},
+
+  {
+    "nombre": "Daiquiri de Ron Zacapa",
+    "descripcion": "Cóctel refinado con ron Zacapa, lima y sirope simple",
+    "categoria": "Clásicos",
+    "ingredientes": [
+      "50ml Ron Zacapa",
+      "25ml Jugo de lima",
+      "15ml Sirope simple",
+      "1 Twist de lima"
+    ],
+    "preparacion": "Agitar todos los ingredientes líquidos con hielo, colar en copa Coupette fría y decorar con twist de lima.",
+    "herramientas": [
+      "Copa Coupette",
+      "Pala de hielo",
+      "Jigger",
+      "Coctelera",
+      "Colador Hawthorne",
+      "Colador fino",
+      "Pinzas"
+    ],
+    "imagen": "assets/images/Daiquiri.jpg"
+  },
+  {
+  "nombre": "Destornillador",
+  "descripcion": "Cóctel sencillo y refrescante con vodka y jugo de naranja",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "50ml Vodka",
+    "120ml Jugo de Naranja",
+    "1 Gajo o rodaja de naranja"
+  ],
+  "preparacion": "Enfriar vaso Highball con hielo, añadir vodka, completar con jugo de naranja, remover suavemente y decorar con rodaja de naranja.",
+  "herramientas": [
+    "Vaso alto tipo Highball",
+    "Pala de hielo",
+    "Jigger",
+    "Cuchara larga para mezclar"
+  ],
+  "imagen": "assets/images/Destornillador.jpg"
+},
+{
+  "nombre": "Dry Martini",
+  "descripcion": "Cóctel clásico y elegante con ginebra y vermut seco",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "50ml Ginebra Gordon's",
+    "15ml Vermut seco",
+    "1 Aceituna"
+  ],
+  "preparacion": "Mezclar ginebra y vermut en vaso mixing glass con hielo, refrescar 15 segundos, servir en copa martini y decorar con aceituna.",
+  "herramientas": [
+    "Vaso mixing glass",
+    "Pinzas de hielo",
+    "Cuchara de bar",
+    "Copa Martini"
+  ],
+  "imagen": "assets/images/Dry_Martini.jpg"
+},
+{
+  "nombre": "Gimlet",
+  "descripcion": "Cóctel clásico con ginebra, jugo de lima y cordial de lima",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "60ml Ginebra",
+    "15ml Jugo de Lima Fresco",
+    "15ml Cordial de Lima",
+    "1 Gajo o rodaja fina de lima"
+  ],
+  "preparacion": "Enfriar la copa, combinar ginebra, jugo de lima y cordial en coctelera con hielo, agitar 12-15 segundos, colar en copa fría y decorar con rodaja de lima.",
+  "herramientas": [
+    "Copa Martini o Vaso Old Fashioned",
+    "Pala de hielo",
+    "Jigger",
+    "Coctelera",
+    "Colador Hawthorne o colador fino"
+  ],
+  "imagen": "assets/images/Gimlet.jpg"
+},
+{
+  "nombre": "Gin Tonic",
+  "descripcion": "Cóctel clásico y refrescante con ginebra y tónica premium",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "50ml Ginebra London Dry",
+    "120-150ml Tónica premium",
+    "1 Rueda de lima o limón"
+  ],
+  "preparacion": "Llenar vaso balloon con hielo, añadir ginebra, verter tónica lentamente, remover suavemente y decorar con rueda de lima.",
+  "herramientas": [
+    "Vaso alto (balloon)",
+    "Pala de hielo"
+  ],
+  "imagen": "assets/images/Gin_Tonic.jpg"
+},
+{
+  "nombre": "Jack Rose",
+  "descripcion": "Cóctel clásico con Applejack o Calvados, jugo de lima y granadina",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "50ml Applejack o Calvados",
+    "20ml Jugo de Lima Fresco",
+    "15ml Granadina"
+  ],
+  "preparacion": "Agregar todos los ingredientes en coctelera con hielo, agitar 15 segundos, colar en copa fría y decorar con twist de limón.",
+  "herramientas": [
+    "Coctelera",
+    "Colador",
+    "Copa de cóctel"
+  ],
+  "imagen": "assets/images/Jack_Rose.jpg"
+},
+{
+  "nombre": "Mai Tai",
+  "descripcion": "Cóctel clásico tropical con ron, lima y almendra",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "45ml Ron oscuro jamaiquino",
+    "15ml Ron Agricole",
+    "15ml Licor de Almendras",
+    "15ml Licor de Naranja",
+    "25ml Jugo de Lima",
+    "10ml Sirope de Orgeat"
+  ],
+  "preparacion": "Agregar todos los ingredientes en coctelera con hielo, agitar 12 segundos, colar en vaso Old Fashioned con hielo nuevo y decorar con media lima y menta.",
+  "herramientas": [
+    "Coctelera",
+    "Vaso Old Fashioned",
+    "Colador"
+  ],
+  "imagen": "assets/images/Mai_tai.jpg"
+},
+{
+  "nombre": "Manhattan",
+  "descripcion": "Cóctel clásico con whisky de centeno, vermut rojo y bitters",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "50ml Whisky Americano Rye",
+    "25ml Vermut Rojo",
+    "1 dash Bitters de Angostura"
+  ],
+  "preparacion": "Mezclar todos los ingredientes en vaso de mezcla con hielo, remover 30 segundos, colar en copa fría y decorar con una cereza.",
+  "herramientas": [
+    "Vaso de mezcla",
+    "Cuchara larga",
+    "Colador",
+    "Copa de cóctel"
+  ],
+  "imagen": "assets/images/Manhattan.jpg"
+},
+{
+  "nombre": "Margarita",
+  "descripcion": "Cóctel clásico mexicano con tequila, licor de naranja y jugo de lima",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "50ml Tequila 100% agave",
+    "20ml Licor de Naranja",
+    "15ml Jugo de Lima Fresco",
+    "10ml Sirope Simple"
+  ],
+  "preparacion": "Agregar todos los ingredientes en coctelera con hielo, agitar 15 segundos, colar en vaso con borde de sal y decorar con rueda de lima.",
+  "herramientas": [
+    "Coctelera",
+    "Colador",
+    "Vaso Margarita"
+  ],
+  "imagen": "assets/images/Margarita.jpg"
+},
+{
+  "nombre": "Martinez",
+  "descripcion": "Cóctel clásico precursor del Martini con ginebra Old Tom, vermut rojo y marrasquino",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "45ml Ginebra Old Tom",
+    "45ml Vermut Rojo",
+    "5ml Licor de Marrasquino",
+    "2 dashes Bitters de Naranja"
+  ],
+  "preparacion": "Mezclar todos los ingredientes en vaso de mezcla con hielo, remover 30 segundos, colar en copa fría y decorar con twist de limón.",
+  "herramientas": [
+    "Vaso de mezcla",
+    "Cuchara larga",
+    "Colador",
+    "Copa de cóctel"
+  ],
+  "imagen": "assets/images/Martinez.jpg"
+},
+{
+  "nombre": "Mojito",
+  "descripcion": "Cóctel clásico cubano con ron blanco, lima, menta y soda",
+  "categoria": "Clásicos",
+  "ingredientes": [
+    "50ml Ron Blanco",
+    "25ml Jugo de Lima",
+    "20ml Sirope Simple",
+    "8-10 hojas de Menta",
+    "Soda"
+  ],
+  "preparacion": "En vaso alto, añadir menta, lima y sirope, machacar suavemente, llenar con hielo, agregar ron y completar con soda, remover y decorar con menta.",
+  "herramientas": [
+    "Vaso alto",
+    "Mortero"
+  ],
+  "imagen": "assets/images/Mojito.jpg"
+},
+{
+  "nombre": "Coco Cola Lime",
+  "descripcion": "Refresco sin alcohol con Coca-Cola, coco y lima",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "200ml Coca-Cola",
+    "30ml Jarabe de coco",
+    "15ml Jugo de lima fresco",
+    "Hielo",
+    "1 rodaja de lima para decorar"
+  ],
+  "preparacion": "Llenar vaso Highball con hielo, añadir jarabe de coco y jugo de lima, completar con Coca-Cola y decorar con rodaja de lima.",
+  "herramientas": [
+    "Vaso Highball"
+  ],
+  "imagen": "assets/images/Dirty_Coconut_Coke.jpg"
+},
+{
+  "nombre": "Porn Star Mock-tini",
+  "descripcion": "Refresco sin alcohol con maracuyá, lima, vainilla y un toque de jengibre",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "60ml Puré de maracuyá",
+    "30ml Jugo de lima fresco",
+    "15ml Jarabe de vainilla",
+    "60ml Refresco de jengibre o agua con gas",
+    "Hielo",
+    "1 vaina de vainilla o 1 cucharada pequeña de pulpa de maracuyá"
+  ],
+  "preparacion": "Combinar puré de maracuyá, jugo de lima, jarabe de vainilla y hielo en coctelera, agitar 15 segundos, colar en copa Martini fría, añadir refresco de jengibre flotando y decorar con pulpa de maracuyá o vaina de vainilla.",
+  "herramientas": [
+    "Coctelera",
+    "Copa Martini"
+  ],
+  "imagen": "assets/images/Porn_Star_Mock-tini.jpg"
+},
+{
+  "nombre": "Iced Mocha",
+  "descripcion": "Bebida sin alcohol con espresso frío, chocolate y leche",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "30ml Espresso frío",
+    "30ml Sirope de chocolate",
+    "90ml Leche o bebida de avena",
+    "Hielo",
+    "Crema batida (opcional)",
+    "Virutas de chocolate negro para decorar"
+  ],
+  "preparacion": "Llenar vaso Old Fashioned con hielo, añadir sirope de chocolate y espresso frío, agregar leche lentamente y decorar con crema batida y virutas de chocolate.",
+  "herramientas": [
+    "Vaso Old Fashioned"
+  ],
+  "imagen": "assets/images/Espresso_Mocha_Crunch_Mocktail.avif"
+},
+{
+  "nombre": "Bee Knees Mocktail Spritz",
+  "descripcion": "Refresco sin alcohol con limón amarillo, miel y agua con gas",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "45ml Jugo de limón amarillo fresco",
+    "30ml Jarabe de miel (mezcla partes iguales de miel y agua caliente)",
+    "2 dashes Bitters de limón o angostura (sin alcohol)",
+    "90ml Agua con gas muy fría",
+    "Hielo",
+    "1 rodaja de limón amarillo para decorar"
+  ],
+  "preparacion": "Combinar jugo de limón, jarabe de miel, bitters y hielo en coctelera, agitar bien, colar en copa de vino con hielo, completar con agua con gas y decorar con rodaja de limón amarillo.",
+  "herramientas": [
+    "Coctelera",
+    "Copa de vino"
+  ],
+  "imagen": "assets/images/Bee_Knees_Mocktail_Spritz.avif"
+},
+{
+  "nombre": "Blood Orange Sparkler",
+  "descripcion": "Refresco sin alcohol con naranja sanguínea, lima y granadina",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "80ml Jugo de naranja sanguínea",
+    "15ml Jugo de lima fresco",
+    "20ml Jarabe de granadina",
+    "Agua con gas o ginger ale",
+    "Hielo",
+    "1 gajo delgado de naranja sanguínea para decorar"
+  ],
+  "preparacion": "Llenar copa Flauta con hielo, añadir jugo de naranja sanguínea, jugo de lima y granadina, completar con agua con gas y decorar con gajo de naranja sanguínea.",
+  "herramientas": [
+    "Copa Flauta"
+  ],
+  "imagen": "assets/images/Blood_Orange_Mocktail_Spritzer.jpg"
+},
+{
+  "nombre": "Reset_Lemonade",
+  "descripcion": "Refresco sin alcohol con limonada, menta y jengibre",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "200ml Limonada natural",
+    "4-5 hojas frescas de menta",
+    "1 rodaja de jengibre fresco",
+    "Agua con gas (opcional)",
+    "Hielo",
+    "1 rodaja de limón y una ramita de menta para decorar"
+  ],
+  "preparacion": "Golpear suavemente menta y jengibre en vaso Highball, llenar con hielo, añadir limonada, completar con agua con gas opcional y decorar con rodaja de limón y ramita de menta.",
+  "herramientas": [
+    "Vaso Highball"
+  ],
+  "imagen": "assets/images/Reset_Lemonade.avif"
+},
+{
+  "nombre": "Touchdown Tea",
+  "descripcion": "Refresco sin alcohol con té negro, limón y melocotón",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "150ml Té negro frío (English Breakfast)",
+    "30ml Jugo de limón fresco",
+    "20ml Jarabe de melocotón",
+    "Refresco de limón o ginger ale",
+    "Hielo",
+    "1 rodaja de melocotón o limón para decorar"
+  ],
+  "preparacion": "Llenar vaso Highball con hielo, añadir té frío, jugo de limón y jarabe de melocotón, completar con refresco de limón, remover suavemente y decorar con rodaja de melocotón.",
+  "herramientas": [
+    "Vaso Highball"
+  ],
+  "imagen": "assets/images/Touchdown_Tea.jpg"
+},
+{
+  "nombre": "Rosemary Grapefruit Spritz",
+  "descripcion": "Refresco sin alcohol con pomelo rosado, romero y agua con gas",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "80ml Jugo de pomelo rosado fresco",
+    "15ml Jarabe de romero (infusiona ramas de romero en jarabe simple caliente)",
+    "1 dash Bitters de pomelo (sin alcohol)",
+    "Agua con gas o agua tónica",
+    "Hielo",
+    "1 ramita pequeña de romero fresco y 1 rodaja de pomelo para decorar"
+  ],
+  "preparacion": "Llenar copa de vino con hielo, añadir jugo de pomelo, jarabe de romero y bitters, completar con agua con gas y decorar con romero y rodaja de pomelo.",
+  "herramientas": [
+    "Copa de vino"
+  ],
+  "imagen": "assets/images/Grapefruit_Rosemary_Mocktail_Spritz.avif"
+},
+{
+  "nombre": "Piña Colada Sin Alcohol",
+  "descripcion": "Refresco tropical sin alcohol con piña y coco",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "120ml Jugo de piña",
+    "60ml Leche de coco",
+    "30ml Crema de coco",
+    "1 taza de hielo",
+    "Rodaja de piña y cereza marrasquino para decorar"
+  ],
+  "preparacion": "Combinar jugo de piña, leche de coco, crema de coco y hielo en licuadora, licuar hasta obtener textura suave y cremosa, servir en vaso Hurricane o cóctel y decorar con rodaja de piña y cereza.",
+  "herramientas": [
+    "Licuadora",
+    "Vaso Hurricane o Cóctel"
+  ],
+  "imagen": "assets/images/Virgin_Piña_Colada.jpg"
+},
+{
+  "nombre": "Mulled Grape Punch",
+  "descripcion": "Bebida caliente sin alcohol con jugo de uva y especias",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "750ml Jugo de uva negra o vino sin alcohol",
+    "1 naranja en rodajas",
+    "60ml Jugo de manzana concentrado o miel",
+    "8 clavos de olor enteros",
+    "2 ramas de canela",
+    "1-2 estrellas de anís",
+    "1 cucharadita de vainas de cardamomo (opcional)"
+  ],
+  "preparacion": "Combinar todos los ingredientes en cacerola, calentar a fuego lento 15 minutos sin hervir, colar y servir caliente en taza de cerámica o mug, decorar con anís estrella y ramita de canela.",
+  "herramientas": [
+    "Cacerola",
+    "Taza de cerámica o mug"
+  ],
+  "imagen": "assets/images/Non-Alcoholic_Mulled_Wine.jpg"
+},
+{
+  "nombre": "Strawberry Thyme Spritz",
+  "descripcion": "Refresco sin alcohol con shrub de fresa, limonada y agua con gas",
+  "categoria": "Sin Alcohol",
+  "ingredientes": [
+    "45ml Shrub de fresa (vinagre de frutas infusionado)",
+    "90ml Limonada natural",
+    "Agua con gas",
+    "Hielo",
+    "1 fresa fresca y una ramita de tomillo para decorar"
+  ],
+  "preparacion": "Llenar vaso Highball con hielo, añadir shrub de fresa y limonada, completar con agua con gas, remover suavemente y decorar con fresa y tomillo.",
+  "herramientas": [
+    "Vaso Highball"
+  ],
+  "imagen": "assets/images/Strawberry-Lemonade_Shrub.avif"
+},
+{
+  "nombre": "Blossom_Fizz",
+  "descripcion": "Cóctel elegante con ginebra, flor de saúco y un toque cítrico",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "45ml Ginebra",
+    "20ml Jarabe de flor de saúco",
+    "15ml Jugo de limón fresco",
+    "60ml Agua con gas o vino espumoso Prosecco",
+    "Hielo",
+    "Pétalos de flores comestibles para decorar (opcional)"
+  ],
+  "preparacion": "Combinar ginebra, jarabe de flor de saúco, jugo de limón y hielo en coctelera, agitar 15 segundos, colar sobre hielo en copa de vino o flauta, completar con agua con gas o Prosecco y decorar con pétalos de flores comestibles.",
+  "herramientas": [
+    "Coctelera",
+    "Copa de vino o copa Flauta"
+  ],
+  "imagen": "assets/images/Blossom_Fizz.jpg"
+},
+{
+  "nombre": "Cucumber Martini",
+  "descripcion": "Cóctel fresco con ginebra, vermut y un toque de pepino",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "60ml Ginebra",
+    "15ml Vermut seco",
+    "10ml Jarabe de pepino o pepino fresco licuado y colado",
+    "2-3 gotas Bitters de pepino o angostura (opcional)",
+    "Hielo",
+    "Rodaja fina de pepino para decorar"
+  ],
+  "preparacion": "Combinar ginebra, vermut, jarabe de pepino, bitters y hielo en coctelera, agitar enérgicamente, colar en copa Martini enfriada y decorar con rodaja fina de pepino.",
+  "herramientas": [
+    "Coctelera",
+    "Copa Martini"
+  ],
+  "imagen": "assets/images/Garden_Martini.avif"
+},
+{
+  "nombre": "Pomelo Spritz",
+  "descripcion": "Cóctel refrescante con Aperol, Prosecco y jugo de pomelo rosado",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "60ml Vino espumoso Prosecco",
+    "30ml Aperol",
+    "20ml Jugo de pomelo rosado fresco",
+    "Un chorrito de agua con gas",
+    "Hielo",
+    "1 rodaja de pomelo rosado para decorar"
+  ],
+  "preparacion": "Llenar copa de vino con hielo, añadir Aperol y jugo de pomelo, completar con Prosecco y agua con gas, decorar con rodaja de pomelo rosado.",
+  "herramientas": [
+    "Copa de vino"
+  ],
+  "imagen": "assets/images/spring-spritz.jpg"
+},
+{
+  "nombre": "Elderflower Sparkle",
+  "descripcion": "Cóctel de temporada con vodka o ginebra, flor de saúco y un toque cítrico",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "45ml Vodka o ginebra",
+    "30ml Jarabe de flor de saúco",
+    "15ml Jugo de lima fresco",
+    "90ml Vino espumoso Prosecco o agua con gas",
+    "Hielo",
+    "Ramita de romero o rodaja de lima para decorar"
+  ],
+  "preparacion": "Verter vodka y jarabe de flor de saúco en copa Flauta, añadir jugo de lima, completar con Prosecco o agua con gas y decorar con romero o rodaja de lima.",
+  "herramientas": [
+    "Copa Flauta"
+  ],
+  "imagen": "assets/images/Elderflower_Sparkler.png"
+},
+{
+  "nombre": "Honey Bourbon Old Fashioned",
+  "descripcion": "Cóctel clásico con bourbon, miel y bitters",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "60ml Bourbon",
+    "15ml Jarabe de miel (mezcla partes iguales de miel y agua caliente)",
+    "2 dashes Bitters de angostura",
+    "1 dash Bitters de naranja",
+    "Hielo grande (cubo grande)",
+    "Piel de limón para decorar"
+  ],
+  "preparacion": "En vaso Old Fashioned, verter jarabe de miel y bitters, añadir bourbon y remover suavemente, agregar cubo grande de hielo, exprimir piel de limón sobre la bebida, frotar el borde del vaso y decorar con la piel.",
+  "herramientas": [
+    "Vaso Old Fashioned"
+  ],
+  "imagen": "assets/images/Honey_Bee_Old_Fashioned.jpg"
+},
+{
+  "nombre": "Mint Julep",
+  "descripcion": "Cóctel clásico con bourbon, menta fresca y hielo picado",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "60ml Bourbon",
+    "20ml Jarabe de azúcar",
+    "8-10 hojas de menta fresca",
+    "Hielo picado",
+    "Ramita de menta para decorar"
+  ],
+  "preparacion": "Colocar hojas de menta y jarabe de azúcar en vaso Julep u Old Fashioned, presionar suavemente con mortero, llenar con hielo picado, añadir bourbon, remover suavemente hasta escarchar el vaso y decorar con ramita de menta.",
+  "herramientas": [
+    "Vaso Julep o Old Fashioned",
+    "Mortero"
+  ],
+  "imagen": "assets/images/Mint_Julep.webp"
+},
+{
+  "nombre": "Campari Spritz",
+  "descripcion": "Cóctel refrescante con Campari, Prosecco y agua con gas",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "60ml Vino espumoso Prosecco",
+    "30ml Campari",
+    "30ml Agua con gas",
+    "Hielo",
+    "1 rodaja de naranja para decorar"
+  ],
+  "preparacion": "Llenar copa de vino con hielo, verter Campari, completar con Prosecco y agua con gas, decorar con rodaja de naranja.",
+  "herramientas": [
+    "Copa de vino"
+  ],
+  "imagen": "assets/images/Summer_Spritz.jpg"
+},
+ {
+  "nombre": "Tropical Breeze",
+  "descripcion": "Cóctel tropical con ron blanco, jugos cítricos y granadina",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "45ml Ron blanco",
+    "60ml Jugo de piña",
+    "30ml Jugo de naranja",
+    "15ml Jugo de lima fresco",
+    "15ml Jarabe de granadina",
+    "Hielo",
+    "Rodaja de naranja o piña para decorar"
+  ],
+  "preparacion": "Llenar vaso Highball con hielo, añadir ron, jugo de piña, jugo de naranja y jugo de lima, remover, verter lentamente la granadina para que se deposite en el fondo y decorar con rodaja de naranja o piña.",
+  "herramientas": [
+    "Vaso Highball"
+  ],
+  "imagen": "assets/images/Tropical_Breeze.jpg"
+},
+{
+  "nombre": "Tequila Basil Fizz",
+  "descripcion": "Cóctel aromático con tequila reposado, limón y albahaca",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "50ml Tequila reposado",
+    "25ml Licor 43 o triple sec",
+    "30ml Jugo de limón amarillo fresco",
+    "20ml Jarabe de albahaca o 5 hojas de albahaca fresca",
+    "Agua con gas",
+    "Hielo",
+    "Hoja de albahaca para decorar"
+  ],
+  "preparacion": "Combinar tequila, Licor 43, jugo de limón, albahaca y hielo en coctelera, agitar enérgicamente, colar sobre hielo en vaso Highball, completar con agua con gas y decorar con hoja de albahaca.",
+  "herramientas": [
+    "Coctelera",
+    "Vaso Highball"
+  ],
+  "imagen": "assets/images/Cítrico_Refrescante.jpg"
+},
+{
+  "nombre": "Lavender Gin & Tonic",
+  "descripcion": "Cóctel aromático con ginebra, jarabe de lavanda y tónica premium",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "60ml Ginebra",
+    "15ml Jarabe de lavanda",
+    "Tónica premium",
+    "Hielo",
+    "Ramita de lavanda y rodaja de limón para decorar"
+  ],
+  "preparacion": "Llenar copa de balón o vaso Highball con hielo, añadir ginebra y jarabe de lavanda, completar con tónica premium y decorar con ramita de lavanda y rodaja de limón.",
+  "herramientas": [
+    "Copa de balón o vaso Highball"
+  ],
+  "imagen": "assets/images/Gin_Tonic_de_Lavanda.jpg"
+},
+{
+  "nombre": "Paloma",
+  "descripcion": "Cóctel clásico mexicano con tequila, lima y refresco de toronja",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "60ml Tequila blanco",
+    "15ml Jugo de lima fresco",
+    "Refresco de toronja (Squirt, Jarritos) o jugo de toronja con agua con gas",
+    "Hielo",
+    "Sal para el borde del vaso (opcional)",
+    "Rodaja de lima o toronja para decorar"
+  ],
+  "preparacion": "Escarchar borde de vaso Highball con sal opcional, llenar con hielo, añadir tequila y jugo de lima, completar con refresco de toronja y decorar con rodaja de lima o toronja.",
+  "herramientas": [
+    "Vaso Highball"
+  ],
+  "imagen": "assets/images/Paloma.webp"
+},
+{
+  "nombre": "Aperol Spritz",
+  "descripcion": "Cóctel icónico italiano con Aperol, Prosecco y un toque de agua con gas",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "90ml Vino espumoso Prosecco",
+    "60ml Aperol",
+    "Un chorrito de agua con gas",
+    "Hielo",
+    "1 rodaja de naranja para decorar"
+  ],
+  "preparacion": "Llenar copa de vino con hielo, verter Aperol, completar con Prosecco y un chorrito de agua con gas, decorar con rodaja de naranja.",
+  "herramientas": [
+    "Copa de vino"
+  ],
+  "imagen": "assets/images/Aperol_Spritz.avif"
+},
+{
+  "nombre": "Dark 'n' Stormy",
+  "descripcion": "Cóctel clásico con ron oscuro, jugo de lima y ginger beer",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "60ml Ron oscuro (preferiblemente Gosling's Black Seal)",
+    "15ml Jugo de lima fresco",
+    "Ginger beer",
+    "Hielo",
+    "Rodaja de lima para decorar"
+  ],
+  "preparacion": "Llenar vaso Highball con hielo, añadir ron oscuro y jugo de lima, completar con ginger beer y decorar con rodaja de lima.",
+  "herramientas": [
+    "Vaso Highball"
+  ],
+  "imagen": "assets/images/Dark n'Stormy.png"
+},
+{
+  "nombre": "Apple Whiskey Sour",
+  "descripcion": "Cóctel de temporada con bourbon o whisky canadiense, licor de manzana y un toque cítrico",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "50ml Bourbon o whisky canadiense",
+    "20ml Licor de manzana (apple liqueur)",
+    "15ml Jugo de limón fresco",
+    "2 dashes Bitters de angostura",
+    "Hielo",
+    "Rodaja de manzana deshidratada para decorar"
+  ],
+  "preparacion": "Combinar todos los ingredientes con hielo en coctelera, agitar enérgicamente, colar sobre hielo en vaso Old Fashioned y decorar con rodaja de manzana deshidratada.",
+  "herramientas": [
+    "Coctelera",
+    "Vaso Old Fashioned"
+  ],
+  "imagen": "assets/images/Autumn_Spice.jpg"
+},
+{
+  "nombre": "Apple Cinnamon Mule",
+  "descripcion": "Cóctel especiado con vodka de manzana o canela, lima y ginger beer",
+  "categoria": "De Temporada",
+  "ingredientes": [
+    "60ml Vodka con sabor a manzana o canela",
+    "15ml Jugo de lima fresco",
+    "Ginger beer",
+    "Hielo",
+    "Rodajas de manzana y rama de canela para decorar"
+  ],
+  "preparacion": "Llenar taza de cobre Mule o vaso Highball con hielo, añadir vodka y jugo de lima, completar con ginger beer y decorar con rodajas de manzana y rama de canela.",
+  "herramientas": [
+    "Taza de cobre Mule o vaso Highball"
+  ],
+  "imagen": "assets/images/Harvest_Mule.jpeg"
+},
+ 
+
+
+
+  {
+    "nombre": "Tarta de chocolate (Tarta Vianner)",
+    "descripcion": "Pastel intenso con chocolate negro y textura húmeda",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "200g Chocolate negro (70%)",
+      "150g Mantequilla sin sal",
+      "4 Huevos grandes",
+      "120g Azúcar glass",
+      "50g Harina de trigo",
+      "1 cucharadita Esencia de vainilla",
+      "Pizca de sal"
+    ],
+    "preparacion": "Derretir chocolate y mantequilla al baño María, batir huevos con azúcar, integrar con chocolate, añadir vainilla y harina, hornear a 170°C por 22-25 minutos.",
+    "herramientas": ["Bol resistente al calor","Varillas eléctricas","Molde 20cm"],
+    "imagen": "assets/images/chocolate.jpeg"
+  },
+  {
+    "nombre": "Gelato",
+    "descripcion": "Helado italiano cremoso con base de leche, nata y vainilla",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "500ml Leche entera",
+      "250ml Nata para montar",
+      "6 Yemas de huevo",
+      "150g Azúcar granulada",
+      "1 Vaina de vainilla",
+      "1 cucharadita Extracto de vainilla"
+    ],
+    "preparacion": "Infusionar leche con vainilla, batir yemas con azúcar, cocinar crema hasta 85°C, enfriar rápido, madurar en frío y mantecar en máquina de helados.",
+    "herramientas": ["Cazo","Batidor","Máquina de helados"],
+    "imagen": "assets/images/55609-gelato-VAT-002-2x1-6f2fdae0608c4626ad1484e0d9ff6eda.jpg"
+  },
+  {
+    "nombre": "Tiramisú",
+    "descripcion": "Postre italiano con capas de mascarpone, café y bizcochos",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "500g Queso mascarpone",
+      "4 Huevos grandes",
+      "100g Azúcar",
+      "200g Bizcochos ladyfingers",
+      "300ml Café espresso frío",
+      "2 cucharadas Licor amaretto (opcional)",
+      "Cacao en polvo",
+      "Chocolate negro rallado"
+    ],
+    "preparacion": "Batir yemas con azúcar, añadir mascarpone, montar claras con azúcar, unir mezclas, mojar bizcochos en café y montar capas, refrigerar mínimo 6h y espolvorear cacao.",
+    "herramientas": ["Bol","Batidor","Fuente rectangular"],
+    "imagen": "assets/images/tiramisú-3.jpg"
+  },
+  {
+    "nombre": "Panna Cotta",
+    "descripcion": "Postre italiano de nata cuajada con gelatina y vainilla",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "500ml Nata para montar",
+      "100g Azúcar",
+      "7g Gelatina neutra",
+      "3 cucharadas Agua fría",
+      "1 Vaina de vainilla",
+      "1 cucharadita Extracto de vainilla"
+    ],
+    "preparacion": "Hidratar gelatina, infusionar nata con vainilla, disolver gelatina, colar mezcla, verter en moldes y refrigerar mínimo 4h.",
+    "herramientas": ["Cazo","Colador","Moldes individuales"],
+    "imagen": "assets/images/AR-72567-Panna-cotta-ddmfs-4x3-14ae724a2a8e4ca3a79c5e27b2b61994.jpg"
+  },
+  {
+    "nombre": "Pastéis de Belém",
+    "descripcion": "Pastelitos portugueses de hojaldre con crema pastelera",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "1 Lámina de hojaldre",
+      "200ml Leche entera",
+      "100g Azúcar",
+      "2 Yemas de huevo",
+      "20g Maicena",
+      "1 cucharada Harina de trigo",
+      "Corteza de limón",
+      "1 Rama de canela"
+    ],
+    "preparacion": "Formar bases con hojaldre en moldes, preparar crema con leche infusionada y mezcla de yemas, rellenar moldes y hornear a 220°C por 15-20 minutos.",
+    "herramientas": ["Molde para magdalenas","Cazo","Batidor"],
+    "imagen": "assets/images/20200123161347-reQkxvU6.jpg"
+  },
+  {
+    "nombre": "Pavlova",
+    "descripcion": "Merengue horneado con nata y frutas frescas",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "4 Claras de huevo",
+      "200g Azúcar blanco",
+      "1 cucharadita Maicena",
+      "1 cucharadita Vinagre blanco",
+      "1 cucharadita Extracto de vainilla",
+      "300ml Nata montada",
+      "Frutas de temporada",
+      "Menta fresca"
+    ],
+    "preparacion": "Montar merengue con claras y azúcar, añadir maicena, vinagre y vainilla, formar base, hornear a baja temperatura, enfriar y decorar con nata y frutas.",
+    "herramientas": ["Batidor eléctrico","Horno","Papel de horno"],
+    "imagen": "assets/images/PAVLOVA.png"
+  },
+  {
+    "nombre": "Pastafrola",
+    "descripcion": "Tarta argentina rellena de dulce de membrillo",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "200g Harina",
+      "100g Mantequilla",
+      "1 Huevo",
+      "100g Azúcar",
+      "Ralladura de limón",
+      "1 cucharadita Polvo de hornear",
+      "250g Dulce de membrillo",
+      "2 cucharadas Agua o licor"
+    ],
+    "preparacion": "Preparar masa con harina, azúcar y mantequilla, enfriar, rellenar con membrillo ablandado, cubrir con tiras de masa y hornear a 180°C por 30-35 minutos.",
+    "herramientas": ["Bol","Rodillo","Tartera"],
+    "imagen": "assets/images/PASTA-FROLA.jpg"
+  },
+  {
+    "nombre": "Crema de papaya",
+    "descripcion": "Postre brasileño con papaya, helado y sirope de cassis",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "1 Papaya madura",
+      "2 bolas Helado de vainilla",
+      "3 cucharadas Sirope de cassis",
+      "4 cucharadas Nata montada",
+      "Galletas bizcocho",
+      "Menta fresca"
+    ],
+    "preparacion": "Licuar papaya con helado, servir en copas con sirope, decorar con nata y menta.",
+    "herramientas": ["Licuadora","Copas altas"],
+    "imagen": "assets/images/crema-papaya-servida-licor-cassis-cerrar_519721-867.jpg"
+  },
+  {
+    "nombre": "Cholado",
+    "descripcion": "Postre colombiano con hielo raspado, frutas y leche condensada",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "4 tazas Hielo raspado",
+      "1 Plátano",
+      "1 Mango",
+      "½ Piña",
+      "¼ Papaya",
+      "4 cucharadas Leche condensada",
+      "2 cucharadas Coco rallado",
+      "2 cucharadas Sirope de fresa",
+      "Cerezas marraschino"
+    ],
+    "preparacion": "Montar capas de hielo raspado y frutas en vaso alto, bañar con leche condensada y sirope, decorar con coco y cerezas.",
+    "herramientas": ["Raspador de hielo","Vasos altos"],
+    "imagen": "assets/images/cholado-valluno.jpg"
+  },
+  {
+    "nombre": "Buñuelos de viento",
+    "descripcion": "Bollitos fritos de masa choux espolvoreados con azúcar glass",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "250ml Agua",
+      "100g Mantequilla",
+      "150g Harina de trigo",
+      "4 Huevos",
+      "1 cucharada Azúcar",
+      "Pizca de sal",
+      "Aceite para freír",
+      "Azúcar glass"
+    ],
+    "preparacion": "Preparar masa choux, añadir huevos, freír bolitas en aceite caliente y espolvorear con azúcar glass.",
+    "herramientas": ["Cazo","Batidor","Freidora o sartén"],
+    "imagen": "assets/images/650_1200.jpg"
+  },
+ 
+  {
+    "nombre": "Milhojas",
+    "descripcion": "Postre con capas de hojaldre, crema pastelera y glaseado",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "1 Plancha de hojaldre",
+      "500ml Leche entera",
+      "4 Yemas de huevo",
+      "100g Azúcar",
+      "40g Maicena",
+      "1 Vaina de vainilla",
+      "Ralladura de limón",
+      "150g Azúcar glass",
+      "50g Chocolate negro"
+    ],
+    "preparacion": "Hornear hojaldre, preparar crema pastelera, montar capas alternando hojaldre y crema, cubrir con glaseado y decorar con chocolate.",
+    "herramientas": ["Horno","Cazo","Batidor","Cuchillo de sierra"],
+    "imagen": "assets/images/Milhojas.jpg"
+  },
+  {
+    "nombre": "Crepe",
+    "descripcion": "Masa fina de harina y huevo cocida en sartén",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "125g Harina de trigo",
+      "2 Huevos grandes",
+      "250ml Leche entera",
+      "1 cucharada Azúcar",
+      "50g Mantequilla derretida",
+      "Pizca de sal",
+      "Mantequilla para engrasar"
+    ],
+    "preparacion": "Batir huevos con leche y mantequilla, añadir harina y sal, reposar masa, cocinar en sartén engrasada por ambos lados.",
+    "herramientas": ["Bol","Batidor","Sartén antiadherente"],
+    "imagen": "assets/images/Pate-a-crepes-recette-de-base-143-scaled.jpg"
+  },
+  {
+    "nombre": "Mousse de chocolate",
+    "descripcion": "Postre aireado con chocolate, nata y claras montadas",
+    "categoria": "Postres o Dulces",
+    "ingredientes": [
+      "200g Chocolate negro (70%)",
+      "4 Huevos grandes",
+      "200ml Nata para montar",
+      "50g Azúcar glass",
+      "1 cucharada Licor de naranja (opcional)",
+      "Pizca de sal"
+    ],
+    "preparacion": "Derretir chocolate, montar nata, integrar yemas en chocolate, montar claras con azúcar, unir todo con movimientos envolventes y refrigerar.",
+    "herramientas": ["Bol","Batidor","Licuadora manual"],
+    "imagen": "assets/images/Chocolate-Mousse_9.webp"
+  },
+
+  {
+    "nombre": "Dirty Banana",
+    "descripcion": "Cóctel cremoso con ron, café y plátano",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "60ml Ron blanco",
+      "30ml Licor de café (Kahlúa)",
+      "30ml Crème de cacao oscura",
+      "1 Plátano maduro",
+      "60ml Leche",
+      "1 taza Hielo"
+    ],
+    "preparacion": "Licuar todos los ingredientes hasta obtener textura cremosa, servir en vaso alto y decorar con plátano o chocolate.",
+    "herramientas": ["Licuadora","Vaso alto"],
+    "imagen": "assets/images/dirty-banana-for-recipe.jpg"
+  },
+  {
+    "nombre": "Rum Runner",
+    "descripcion": "Cóctel frutal con rones y licores tropicales",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "30ml Ron oscuro",
+      "30ml Ron claro",
+      "30ml Licor de plátano",
+      "30ml Licor de zarzamora",
+      "60ml Jugo de naranja fresco",
+      "Chorrito de granadina",
+      "Hielo"
+    ],
+    "preparacion": "Agitar ingredientes con hielo en coctelera, colar en vaso alto y decorar con piña y cereza.",
+    "herramientas": ["Coctelera","Colador","Vaso alto"],
+    "imagen": "assets/images/rum-runner-1500x1500-hero-2a4f20ad959b49ff8ca2cc81a977233f.jpg"
+  },
+  {
+    "nombre": "Mango Mule",
+    "descripcion": "Variante tropical del Mule con mango y vodka",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "60ml Vodka",
+      "90ml Cerveza de jengibre",
+      "30ml Puré de mango",
+      "15ml Jugo de lima fresco",
+      "Cubos de hielo"
+    ],
+    "preparacion": "Combinar vodka, mango y lima en taza de cobre con hielo, completar con ginger beer y decorar con menta.",
+    "herramientas": ["Taza de cobre Mule","Cuchara para mezclar"],
+    "imagen": "assets/images/a.jpg"
+  },
+  {
+    "nombre": "Cobbler de Piña",
+    "descripcion": "Cóctel refrescante con ron blanco, piña y cítricos",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "60ml Jugo de piña",
+      "45ml Ron blanco",
+      "15ml Triple sec",
+      "15ml Jugo de lima fresco",
+      "Hielo picado"
+    ],
+    "preparacion": "Agitar ingredientes con hielo picado en coctelera, colar en vaso frío y decorar con piña y cereza.",
+    "herramientas": ["Coctelera","Colador","Vaso refrigerado"],
+    "imagen": "assets/images/0.jpg"
+  },
+  {
+    "nombre": "Cerveza de Jengibre con Piña",
+    "descripcion": "Refresco tropical sin alcohol con piña y jengibre",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "500ml Jugo de piña fresco",
+      "100ml Jarabe de jengibre",
+      "1 litro Agua con gas",
+      "Cubitos de hielo"
+    ],
+    "preparacion": "Mezclar jugo de piña y jarabe de jengibre en jarra, añadir agua con gas y servir en vasos altos con hielo.",
+    "herramientas": ["Jarra grande","Cuchara para mezclar","Vasos altos"],
+    "imagen": "assets/images/glass-ginger-beer-pineapple-ice-768x1024.webp"
+  },
+  {
+    "nombre": "Mojito Virgen",
+    "descripcion": "Versión sin alcohol del clásico Mojito",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "10 hojas Menta fresca",
+      "30ml Jugo de lima fresco",
+      "2 cucharaditas Azúcar o jarabe simple",
+      "120ml Agua con gas",
+      "Cubos de hielo"
+    ],
+    "preparacion": "Macerar menta con jugo de lima y azúcar, añadir hielo, completar con agua con gas y decorar con menta.",
+    "herramientas": ["Vaso alto","Mortero"],
+    "imagen": "assets/images/mojito-virgen-foto-principal.jpg"
+  },
+  {
+    "nombre": "Piña Colada Virgen",
+    "descripcion": "Versión sin alcohol de la Piña Colada",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "120ml Crema de coco",
+      "240ml Jugo de piña",
+      "60ml Crema espesa",
+      "2 tazas Hielo picado"
+    ],
+    "preparacion": "Licuar crema de coco, jugo de piña, crema espesa y hielo, servir en vasos fríos y decorar con piña y cereza.",
+    "herramientas": ["Licuadora","Vasos altos"],
+    "imagen": "assets/images/pina.png"
+  },
+  {
+    "nombre": "Margarita Virgen de Sandía",
+    "descripcion": "Cóctel sin alcohol con sandía y lima",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "500ml Jugo de sandía fresca",
+      "60ml Jugo de lima fresco",
+      "30ml Jarabe simple",
+      "1 pizca Sal",
+      "Cubos de hielo"
+    ],
+    "preparacion": "Licuar sandía y colar, agitar con jugo de lima, jarabe y sal en coctelera, servir en copas Margarita.",
+    "herramientas": ["Licuadora","Colador","Coctelera","Copas Margarita"],
+    "imagen": "assets/images/virgin_watermelon_margarita_cocktail.webp"
+  },
+  {
+    "nombre": "Bahama Mama",
+    "descripcion": "Cóctel tropical con ron de coco y jugos frutales",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "30ml Ron oscuro",
+      "30ml Ron de coco",
+      "60ml Jugo de piña",
+      "60ml Jugo de naranja",
+      "15ml Granadina",
+      "Cubos de hielo"
+    ],
+    "preparacion": "Agitar todos los ingredientes con hielo en coctelera, colar en vaso alto y decorar con naranja y cereza.",
+    "herramientas": ["Coctelera","Colador","Vaso alto"],
+    "imagen": "assets/images/Bahama-mama-fb944d2.jpg"
+  },
+  {
+    "nombre": "Daiquiri de Banana",
+    "descripcion": "Cóctel tropical con ron blanco y banana",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "60ml Ron blanco",
+      "30ml Jugo de lima fresco",
+      "15ml Jarabe simple",
+      "1 Banana madura",
+      "Cubos de hielo"
+    ],
+    "preparacion": "Licuar todos los ingredientes con hielo, servir en vaso frío y decorar con banana o lima.",
+    "herramientas": ["Licuadora","Vaso frío"],
+    "imagen": "assets/images/como_hacer_daiquiri_de_banana_42549_600.jpg"
+  },
+  {
+    "nombre": "Barracuda",
+    "descripcion": "Cóctel tropical con ron dorado, Galliano y Prosecco",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "45ml Ron dorado",
+      "15ml Licor Galliano",
+      "60ml Jugo de piña",
+      "15ml Jugo de lima",
+      "60ml Prosecco",
+      "Cubitos de hielo"
+    ],
+    "preparacion": "Agitar ron, Galliano, piña y lima con hielo, colar en copa de cóctel y completar con Prosecco.",
+    "herramientas": ["Coctelera","Colador","Copa de cóctel"],
+    "imagen": "assets/images/dd45d054dfce696b68bc0b43a11d1bfe_M.jpg"
+  },
+  {
+    "nombre": "Bay Breeze",
+    "descripcion": "Cóctel tropical ligero con vodka, arándano y piña",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "45ml Vodka",
+      "60ml Jugo de arándano",
+      "60ml Jugo de piña",
+      "Cubos de hielo"
+    ],
+    "preparacion": "Mezclar vodka y jugos en vaso alto con hielo, remover suavemente y decorar con lima.",
+    "herramientas": ["Vaso alto","Cuchara para mezclar"],
+    "imagen": "assets/images/malibu-bay-breeze-recipe-8.jpg"
+  },
+  {
+    "nombre": "Margarita de Mora Clásica con Hielo",
+    "descripcion": "Cóctel tropical con tequila, mora y lima",
+    "categoria": "Tropicales",
+    "ingredientes": [
+      "50ml Tequila",
+      "25ml Triple sec",
+      "25ml Jugo de lima fresco",
+      "15ml Jarabe simple",
+      "60ml Puré de mora",
+      "Cubos de hielo"
+    ],
+    "preparacion": "Agitar todos los ingredientes con hielo en coctelera, colar en vaso ancho y decorar con moras frescas.",
+    "herramientas": ["Coctelera","Colador","Vaso Margarita"],
+    "imagen": "assets/images/blackberry-margarita-2.jpg"
+  },
+  
+  {
+    "nombre": "57 Chevy Drink",
+    "descripcion": "Cóctel moderno con vodka, Grand Marnier y jugo de piña",
+    "categoria": "Modernos",
+    "ingredientes": [
+      "15ml Vodka",
+      "15ml Grand Marnier",
+      "60-120ml Jugo de piña",
+      "Hielo"
+    ],
+    "preparacion": "Agitar vodka, Grand Marnier y jugo de piña con hielo en coctelera, colar en copa de cóctel y decorar con naranja o piña.",
+    "herramientas": ["Coctelera","Copa de cóctel"],
+    "imagen": "assets/images/57-Chevy-Drink-Cocktail-with-Southern-Comfort.jpg"
+  },
+  {
+    "nombre": "Grape-roni",
+    "descripcion": "Variante del Negroni con licor de pomelo y naranja",
+    "categoria": "Modernos",
+    "ingredientes": [
+      "40ml Campari",
+      "30ml Martini Rosso",
+      "30ml Licor de pomelo",
+      "60ml Zumo de naranja colado"
+    ],
+    "preparacion": "Colar zumo de naranja, mezclar todos los ingredientes en vaso mezclador con hielo, remover y servir en vaso bajo.",
+    "herramientas": ["Vaso mezclador","Cuchara larga"],
+    "imagen": "assets/images/1432744941.jpg"
+  },
+  {
+    "nombre": "Negronii",
+    "descripcion": "Creación moderna con ginebra Monkey y esferificaciones de naranja",
+    "categoria": "Modernos",
+    "ingredientes": [
+      "15ml Monkey 47 Gin",
+      "15ml Monkey Sloe Gin",
+      "30ml Vermut Dos Déus",
+      "30ml Campari",
+      "1 Twist de naranja",
+      "4 Esferificaciones de naranja"
+    ],
+    "preparacion": "Mezclar ingredientes líquidos en mixing glass con hielo, colar en botella fría, añadir esferificaciones y decorar con twist.",
+    "herramientas": ["Mixing glass","Colador"],
+    "imagen": "assets/images/DAD3AE52-E326-4309-90BA-10F6BEEB1EC7.avif"
+  },
+  {
+    "nombre": "Gran Chocolate Caliente",
+    "descripcion": "Bebida caliente con vodka y chocolate artesanal",
+    "categoria": "Modernos",
+    "ingredientes": [
+      "240-300ml Chocolate caliente",
+      "30-45ml Vodka",
+      "1L Leche entera",
+      "3-4 Tablillas de chocolate",
+      "2 cucharadas Chocolate en polvo",
+      "2 cucharadas Vainilla líquida",
+      "4 Bombones"
+    ],
+    "preparacion": "Preparar chocolate caliente con leche, chocolate y vainilla, servir en taza con vodka y decorar con bombones.",
+    "herramientas": ["Cazo","Taza resistente al calor"],
+    "imagen": "assets/images/chocolate-elle-gourmet-2-65807604d9224.avif"
+  },
+  {
+    "nombre": "Chamoy, Tamarindo y Mezcal",
+    "descripcion": "Cóctel moderno mexicano con sabores intensos",
+    "categoria": "Modernos",
+    "ingredientes": [
+      "30ml Mezcal",
+      "30ml Chamoy",
+      "30ml Concentrado de tamarindo",
+      "Sal y chile piquín",
+      "Tiras de pepino",
+      "Hielo"
+    ],
+    "preparacion": "Escarchar vaso con sal y chile, agitar mezcal, chamoy y tamarindo con hielo, colar y decorar con pepino.",
+    "herramientas": ["Coctelera","Vaso bajo"],
+    "imagen": "assets/images/mezcal-de-tamarindo-y-jamaica.webp"
+  },
+  {
+    "nombre": "B-52",
+    "descripcion": "Shot en capas con Kahlúa, crema irlandesa y Grand Marnier",
+    "categoria": "Modernos",
+    "ingredientes": [
+      "30ml Kahlúa",
+      "30ml Crema irlandesa",
+      "30ml Grand Marnier"
+    ],
+    "preparacion": "Verter Kahlúa, luego crema irlandesa y finalmente Grand Marnier en capas usando cuchara.",
+    "herramientas": ["Vaso shot","Cuchara de bar"],
+    "imagen": "assets/images/coctel-b-52.webp"
+  },
+  {
+    "nombre": "Pineapple Coolers",
+    "descripcion": "Cóctel refrescante con piña, limón, coco y ron",
+    "categoria": "Modernos",
+    "ingredientes": [
+      "4 tazas Piña fresca",
+      "1½ tazas Hielo",
+      "60ml Jugo de limón",
+      "60ml Leche de coco",
+      "80ml Ron blanco"
+    ],
+    "preparacion": "Licuar todos los ingredientes hasta textura suave, servir en vasos altos y decorar con piña y menta.",
+    "herramientas": ["Licuadora","Vasos altos"],
+    "imagen": "assets/images/Pineapple-Lime-Cooler-Recipe-750x750.jpg"
+  },
+  {
+    "nombre": "Elephant Flip",
+    "descripcion": "Cóctel complejo con amaro, ron, bourbon, huevo y cerveza IPA",
+    "categoria": "Modernos",
+    "ingredientes": [
+      "30ml Amaro Ramazzotti",
+      "15ml Smith & Cross Rum",
+      "15ml Bourbon",
+      "15ml Jarabe de azúcar morena",
+      "15ml Jarabe de granada",
+      "4 dashes Angostura bitters",
+      "4 dashes Xocolatl Mole bitters",
+      "1 pizca Sal",
+      "1 Huevo entero",
+      "30ml Cerveza IPA"
+    ],
+    "preparacion": "Agitar en seco todos los ingredientes excepto IPA, luego con hielo, colar en vaso Fizz y completar con IPA.",
+    "herramientas": ["Coctelera","Colador","Vaso Fizz"],
+    "imagen": "assets/images/Brandy-Flip-2-Cocktail-Ale-Sherry-Brandy-Drinks-History-Recipe-Elephant-Flip-Pouring-Ribbons-Franklin-Bar-Philadelphia-NYC.webp"
+  }  
+
+]
+
+

@@ -11,6 +11,7 @@ import 'features/settings/settings_screen.dart';
 import 'features/categories/categoria_screen.dart';
 import 'models/bebida.dart';
 
+//flutter run -d web-server
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 

@@ -10,12 +10,19 @@ import 'features/favorites/favorites_screen.dart';
 import 'features/settings/settings_screen.dart';
 import 'features/categories/categoria_screen.dart';
 import 'models/bebida.dart';
+import 'models/trago_categoria.dart';
+import 'services/cargar_tragos.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Hive.initFlutter();
-  Hive.registerAdapter(BebidaAdapter());
+  Hive.registerAdapter(BebidaAdapter()); 
+  Hive.registerAdapter(TragoCategoriaAdapter());
+
+  await Hive.openBox<TragoCategoria>('tragos');
+
+  await cargarTragosDesdeJson();
 
   runApp(
     MultiProvider(

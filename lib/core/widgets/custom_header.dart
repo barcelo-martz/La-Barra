@@ -24,7 +24,7 @@ class _CustomHeaderState extends State<CustomHeader> {
       leading: IconButton(
         icon: const Icon(Icons.menu),
         onPressed: () {
-          Scaffold.of(context).openDrawer(); // abre el Drawer
+          Scaffold.of(context).openDrawer(); 
         },
       ),
       title: _isSearching

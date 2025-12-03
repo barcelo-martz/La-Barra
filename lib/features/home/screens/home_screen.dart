@@ -157,8 +157,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
                   CircleAvatar(
-                    radius: 30,
-                    backgroundImage: AssetImage('assets/icons/drinks.png'),
+                    radius: 35,
+                    backgroundImage: AssetImage('assets/logo/logo.jpg'),
                   ),
                   SizedBox(height: 12),
                   Text(
@@ -176,21 +176,22 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             const Divider(),
-            _drawerItem(context, 'Clásicos'),
-            _drawerItem(context, 'Tropicales'),
-            _drawerItem(context, 'De Autor'),
-            _drawerItem(context, 'Sin Alcohol'),
-            _drawerItem(context, 'De Temporada'),
-            _drawerItem(context, 'Postres'),
-            _drawerItem(context, 'Shots'),
-            const Divider(),
+            _drawerItem(context, 'Clásicos', Icons.local_bar),
+          _drawerItem(context, 'Tropicales', Icons.beach_access),
+          _drawerItem(context, 'De Autor', Icons.star),
+          _drawerItem(context, 'Sin Alcohol', Icons.no_drinks),
+          _drawerItem(context, 'De Temporada', Icons.calendar_today),
+          _drawerItem(context, 'Postres', Icons.icecream),
+          _drawerItem(context, 'Shots', Icons.bolt),
+            //const Divider(),
+            const Spacer(),
             const Padding(
               padding: EdgeInsets.all(16),
               child: Row(
                 children: [
                   Icon(Icons.info_outline, color: Colors.grey),
                   SizedBox(width: 8),
-                  Text('Versión 1.0.0'),
+                  Text('Versión Beta 1.0'),
                 ],
               ),
             ),
@@ -200,18 +201,19 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _drawerItem(BuildContext context, String categoria) {
-    return ListTile(
-      leading: const Icon(Icons.local_drink),
-      title: Text(categoria),
-      onTap: () {
-        Navigator.pop(context);
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (_) => CategoriaScreen(categoria: categoria)),
-        );
-      },
-    );
-  }
+  Widget _drawerItem(BuildContext context, String categoria, IconData icono) {
+  return ListTile(
+    leading: Icon(icono, color: Colors.redAccent),
+    title: Text(categoria),
+    onTap: () {
+      Navigator.pop(context);
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => CategoriaScreen(categoria: categoria),
+        ),
+      );
+    },
+  );
+}
 }

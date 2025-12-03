@@ -13,6 +13,7 @@ import 'models/bebida.dart';
 import 'models/trago_categoria.dart';
 import 'services/cargar_tragos.dart';
 
+//flutter run -d web-server
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 

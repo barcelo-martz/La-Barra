@@ -25,7 +25,16 @@ class TragoCard extends StatelessWidget {
         margin: const EdgeInsets.only(bottom: 12),
         child: Row(
           children: [
-            Image.asset(trago.imagen, width: 80, height: 80, fit: BoxFit.cover),
+             ClipRRect(
+              borderRadius: BorderRadius.circular(8), // ajusta el radio
+              child: Image.asset(
+                trago.imagen,
+                width: 80,
+                height: 80,
+                fit: BoxFit.cover,
+              ),
+            ),
+            //Image.asset(trago.imagen, width: 80, height: 80, fit: BoxFit.cover),
             const SizedBox(width: 12),
             Expanded(
               child: Column(

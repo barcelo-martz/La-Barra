@@ -28,7 +28,7 @@ class TragoDetalleScreen extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
             child: Image.asset(
-              'assets/images/carrusel3.jpeg',
+              trago.Imagen,
               height: 200,
               width: double.infinity,
               fit: BoxFit.cover,

@@ -1,6 +1,6 @@
 import 'package:hive/hive.dart';
 
-part 'bebida.g.dart'; // archivo generado automáticamente
+part 'bebida.g.dart'; 
 
 @HiveType(typeId: 0)
 class Bebida {

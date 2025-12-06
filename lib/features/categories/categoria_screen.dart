@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:la_barra/models/trago_categoria.dart';
 import 'package:provider/provider.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -56,7 +57,6 @@ class _CategoriaScreenState extends State<CategoriaScreen> {
         .where((t) => t.categoria == widget.categoria)
         .toList();
 
-    // Filtro de búsqueda
     final query = _searchController.text.trim().toLowerCase();
     final tragos = query.isEmpty
         ? todos
@@ -67,7 +67,6 @@ class _CategoriaScreenState extends State<CategoriaScreen> {
           ).toList();   
 
     return Scaffold(
-      // Drawer propio para que el ícono de menú funcione en esta ruta
       drawer: _buildDrawer(context),
 
       appBar: AppBar(
@@ -110,7 +109,7 @@ class _CategoriaScreenState extends State<CategoriaScreen> {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: tragos.isEmpty
-        ? _buildEmptyState()
+        ? EmptyState()
         /* child */: ListView.builder(
           itemCount: tragos.length,
           itemBuilder: (_, i) {
@@ -193,7 +192,7 @@ class _CategoriaScreenState extends State<CategoriaScreen> {
     final box = Hive.box<TragoCategoria>('tragos');
     final categorias = box.values.map((t) => t.categoria).toSet().toList();
 
-    categorias.sort((a, b)=> a.compareTo(b))
+    categorias.sort((a, b)=> a.compareTo(b));
 
     return Drawer(
       child: SafeArea(
@@ -230,10 +229,10 @@ class _CategoriaScreenState extends State<CategoriaScreen> {
             const Divider(),
             _drawerItem(context, 'Clásicos', Icons.local_bar),
           _drawerItem(context, 'Tropicales', Icons.beach_access),
-          _drawerItem(context, 'De Autor', Icons.star),
+          _drawerItem(context, 'Modernos', Icons.star),
           _drawerItem(context, 'Sin Alcohol', Icons.no_drinks),
           _drawerItem(context, 'De Temporada', Icons.calendar_today),
-          _drawerItem(context, 'Postres', Icons.icecream),
+          _drawerItem(context, 'Postres o Dulces', Icons.icecream),
           _drawerItem(context, 'Shots', Icons.bolt),
             //const Divider(),
             const Spacer(),

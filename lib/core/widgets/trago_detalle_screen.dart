@@ -24,11 +24,10 @@ class TragoDetalleScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // Imagen al inicio
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
             child: Image.asset(
-              trago.Imagen,
+              trago.imagen,
               height: 200,
               width: double.infinity,
               fit: BoxFit.cover,
@@ -36,7 +35,6 @@ class TragoDetalleScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
 
-          // Nombre y categoría
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -59,7 +57,6 @@ class TragoDetalleScreen extends StatelessWidget {
           ),
           const SizedBox(height: 12),
 
-          // Descripción
           Text(
             trago.descripcion,
             style: const TextStyle(
@@ -70,7 +67,6 @@ class TragoDetalleScreen extends StatelessWidget {
           ),
           const Divider(height: 32),
 
-          // Ingredientes
           const Row(
             children: [
               Icon(Icons.kitchen, color: Colors.redAccent),
@@ -82,7 +78,6 @@ class TragoDetalleScreen extends StatelessWidget {
           ...trago.ingredientes.map((i) => Text('• $i')),
           const Divider(height: 32),
 
-          // Preparación
           const Row(
             children: [
               Icon(Icons.menu_book, color: Colors.redAccent),
@@ -94,7 +89,6 @@ class TragoDetalleScreen extends StatelessWidget {
           Text(trago.preparacion),
           const Divider(height: 32),
 
-          // Herramientas
           const Row(
             children: [
               Icon(Icons.build, color: Colors.redAccent),
@@ -107,7 +101,6 @@ class TragoDetalleScreen extends StatelessWidget {
         ],
       ),
 
-      // Solo botón de favoritos
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.redAccent,
         child: Icon(

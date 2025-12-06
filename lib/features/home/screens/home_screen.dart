@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:la_barra/features/categories/categoria_screen.dart';
-import 'package:la_barra/features/home/widgets/consejos%20_diarios.dart';
-import 'package:la_barra/features/home/widgets/curiosidades_noticias.dart';
 import 'package:la_barra/features/home/widgets/retos_logros.dart';
 import 'package:la_barra/features/home/widgets/text_carousel.dart';
 import 'package:la_barra/features/mi_barra/mi_barra_screen.dart';
@@ -27,7 +25,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // ✅ Solo Inicio usa Scaffold con header especial y footer
     if (_selectedIndex == 0) {
       return Scaffold(
         drawer: _buildDrawer(context),
@@ -64,7 +61,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
             ),
               SizedBox(height: 24),
-              // 🏆 Retos y Logros
               RetosLogrosBlock(),
               SizedBox(height: 24),
               AutoTextCarousel(
@@ -79,29 +75,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               SizedBox(height: 24),
-              
-              // Padding(
-              //   padding: EdgeInsets.symmetric(horizontal: 16),
-              //   child: Text(
-              //     'Mi Barra',
-              //     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              //   ),
-              // ),
-              // SizedBox(height: 24),
-              // Padding(
-              //   padding: EdgeInsets.symmetric(horizontal: 16),
-              //   child: Text(
-              //     'Consejos Diarios',
-              //     style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
-              //   ),
-              // ),
-              // Padding(
-              //   padding: EdgeInsets.all(16),
-              //   child: Text(
-              //     'Bienvenido a La Barra, tu rincón de coctelería\n¿Qué vas a preparar hoy?',
-              //     textAlign: TextAlign.center,
-              //   ),
-              // ),
             ],
           ),
         ),
@@ -130,7 +103,6 @@ class _HomeScreenState extends State<HomeScreen> {
       );
     }
 
-    // ✅ Para las demás secciones, renderiza directamente su pantalla completa
     switch (_selectedIndex) {
       case 1:
         return const MiBarraScreen();
@@ -178,12 +150,11 @@ class _HomeScreenState extends State<HomeScreen> {
             const Divider(),
             _drawerItem(context, 'Clásicos', Icons.local_bar),
           _drawerItem(context, 'Tropicales', Icons.beach_access),
-          _drawerItem(context, 'De Autor', Icons.star),
+          _drawerItem(context, 'Modernos', Icons.star),
           _drawerItem(context, 'Sin Alcohol', Icons.no_drinks),
           _drawerItem(context, 'De Temporada', Icons.calendar_today),
-          _drawerItem(context, 'Postres', Icons.icecream),
+          _drawerItem(context, 'Postres o Dulces', Icons.icecream),
           _drawerItem(context, 'Shots', Icons.bolt),
-            //const Divider(),
             const Spacer(),
             const Padding(
               padding: EdgeInsets.all(16),

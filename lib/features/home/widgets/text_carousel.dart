@@ -107,7 +107,6 @@ class _AutoTextCarouselState extends State<AutoTextCarousel> {
                   );
                 },
               ),
-              // ⬅️ Flecha izquierda
               Positioned(
                 left: 0,
                 top: 0,
@@ -120,7 +119,6 @@ class _AutoTextCarouselState extends State<AutoTextCarousel> {
                   },
                 ),
               ),
-              // ➡️ Flecha derecha
               Positioned(
                 right: 0,
                 top: 0,

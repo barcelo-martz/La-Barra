@@ -16,7 +16,7 @@
     "ingredientes": ["Cilantro", "Menta", "Jalapeño", "Piña", "Lima", "Sal"],
     "preparacion": "Licuar todos los ingredientes frescos y servir frío en vaso de shot.",
     "herramientas": ["Licuadora", "Vaso de shot"],
-    "imagen": "assets/images/verdita.png"
+    "imagen": "assets/images/verdita.jpeg"
   },
   {
     "nombre": "Mini Margarita",
@@ -482,7 +482,7 @@
   "herramientas": [
     "Vaso Old Fashioned"
   ],
-  "imagen": "assets/images/Espresso_Mocha_Crunch_Mocktail.avif"
+  "imagen": "assets/images/Espresso_Mocha_Crunch_Mocktail.jpg"
 },
 {
   "nombre": "Bee Knees Mocktail Spritz",
@@ -501,7 +501,7 @@
     "Coctelera",
     "Copa de vino"
   ],
-  "imagen": "assets/images/Bee_Knees_Mocktail_Spritz.avif"
+  "imagen": "assets/images/Bee_Knees_Mocktail_Spritz.jpg"
 },
 {
   "nombre": "Blood Orange Sparkler",
@@ -522,7 +522,7 @@
   "imagen": "assets/images/Blood_Orange_Mocktail_Spritzer.jpg"
 },
 {
-  "nombre": "Reset_Lemonade",
+  "nombre": "Reset Lemonade",
   "descripcion": "Refresco sin alcohol con limonada, menta y jengibre",
   "categoria": "Sin Alcohol",
   "ingredientes": [
@@ -537,7 +537,7 @@
   "herramientas": [
     "Vaso Highball"
   ],
-  "imagen": "assets/images/Reset_Lemonade.avif"
+  "imagen": "assets/images/Reset_Lemonade.jpg"
 },
 {
   "nombre": "Touchdown Tea",
@@ -573,7 +573,7 @@
   "herramientas": [
     "Copa de vino"
   ],
-  "imagen": "assets/images/Grapefruit_Rosemary_Mocktail_Spritz.avif"
+  "imagen": "assets/images/Grapefruit_Rosemary_Mocktail_Spritz.jpg"
 },
 {
   "nombre": "Piña Colada Sin Alcohol",
@@ -628,7 +628,7 @@
   "herramientas": [
     "Vaso Highball"
   ],
-  "imagen": "assets/images/Strawberry-Lemonade_Shrub.avif"
+  "imagen": "assets/images/Strawberry-Lemonade_Shrub.jpg"
 },
 {
   "nombre": "Blossom_Fizz",
@@ -666,7 +666,7 @@
     "Coctelera",
     "Copa Martini"
   ],
-  "imagen": "assets/images/Garden_Martini.avif"
+  "imagen": "assets/images/Garden_Martini.jpg"
 },
 {
   "nombre": "Pomelo Spritz",
@@ -757,7 +757,7 @@
   ],
   "imagen": "assets/images/Summer_Spritz.jpg"
 },
- {
+{
   "nombre": "Tropical Breeze",
   "descripcion": "Cóctel tropical con ron blanco, jugos cítricos y granadina",
   "categoria": "De Temporada",
@@ -846,7 +846,7 @@
   "herramientas": [
     "Copa de vino"
   ],
-  "imagen": "assets/images/Aperol_Spritz.avif"
+  "imagen": "assets/images/Aperol_Spritz.jpg"
 },
 {
   "nombre": "Dark 'n' Stormy",
@@ -901,10 +901,6 @@
   ],
   "imagen": "assets/images/Harvest_Mule.jpeg"
 },
- 
-
-
-
   {
     "nombre": "Tarta de chocolate (Tarta Vianner)",
     "descripcion": "Pastel intenso con chocolate negro y textura húmeda",
@@ -1374,7 +1370,7 @@
     ],
     "preparacion": "Mezclar ingredientes líquidos en mixing glass con hielo, colar en botella fría, añadir esferificaciones y decorar con twist.",
     "herramientas": ["Mixing glass","Colador"],
-    "imagen": "assets/images/DAD3AE52-E326-4309-90BA-10F6BEEB1EC7.avif"
+    "imagen": "assets/images/DAD3AE52-E326-4309-90BA-10F6BEEB1EC7.jpg"
   },
   {
     "nombre": "Gran Chocolate Caliente",
@@ -1391,12 +1387,12 @@
     ],
     "preparacion": "Preparar chocolate caliente con leche, chocolate y vainilla, servir en taza con vodka y decorar con bombones.",
     "herramientas": ["Cazo","Taza resistente al calor"],
-    "imagen": "assets/images/chocolate-elle-gourmet-2-65807604d9224.avif"
+    "imagen": "assets/images/chocolate-elle-gourmet-2-65807604d9224.jpg"
   },
   {
     "nombre": "Chamoy, Tamarindo y Mezcal",
     "descripcion": "Cóctel moderno mexicano con sabores intensos",
-    "categoria": "Modernos",
+    "categoria": "De Autor",
     "ingredientes": [
       "30ml Mezcal",
       "30ml Chamoy",

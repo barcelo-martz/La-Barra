@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:la_barra/models/trago_categoria.dart';
+import 'package:la_barra/providers/cargar_tragos.dart';
 import 'package:provider/provider.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -10,8 +12,7 @@ import 'features/favorites/favorites_screen.dart';
 import 'features/settings/settings_screen.dart';
 import 'features/categories/categoria_screen.dart';
 import 'models/bebida.dart';
-import 'models/trago_categoria.dart';
-import 'services/cargar_tragos.dart';
+
 
 //flutter run -d web-server
 void main() async {

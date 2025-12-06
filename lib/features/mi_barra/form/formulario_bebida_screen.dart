@@ -29,7 +29,6 @@ class _FormularioBebidaScreenState extends State<FormularioBebidaScreen> {
     'Personalizado',
   ];
 
-  // === FALTABAN ESTAS DOS FUNCIONES ===
   void _agregarCampo(List<TextEditingController> lista) {
     setState(() => lista.add(TextEditingController()));
   }
@@ -66,7 +65,6 @@ class _FormularioBebidaScreenState extends State<FormularioBebidaScreen> {
     ],
   );
 }
-  // ====================================
 
   void _guardarBebida() {
     final nombre = _nombreController.text;
@@ -124,7 +122,7 @@ class _FormularioBebidaScreenState extends State<FormularioBebidaScreen> {
             const Text('Pasos de preparación', style: TextStyle(fontWeight: FontWeight.bold)),
             TextField(
               controller: _pasosController,
-              maxLines: null, // crece dinámicamente
+              maxLines: null, 
               keyboardType: TextInputType.multiline,
             ),
             const SizedBox(height: 12),

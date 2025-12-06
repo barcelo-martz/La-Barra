@@ -1,12 +1,13 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:hive/hive.dart';
-import 'models/trago_categoria.dart';
+import '../models/trago_categoria.dart';
+
+
 
 Future<void> cargarTragosDesdeJson() async {
   final box = Hive.box<TragoCategoria>('tragos');
 
-  // Solo cargar si la caja está vacía (evita duplicados)
   if (box.isEmpty) {
     final String data = await rootBundle.loadString('assets/data/tragos.json');
     final List<dynamic> jsonList = json.decode(data);

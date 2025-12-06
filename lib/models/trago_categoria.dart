@@ -2,7 +2,7 @@ import 'package:hive/hive.dart';
 
 part 'trago_categoria.g.dart'; 
 
-@HiveType(typeId: 0) 
+@HiveType(typeId: 1) 
 class TragoCategoria {
   @HiveField(0)
   final String nombre;

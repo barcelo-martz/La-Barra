@@ -30,4 +30,26 @@ class Bebida {
     required this.pasos,
     required this.herramientas,
   });
+
+  Map<String, dynamic> toMap() {
+    return {
+      'nombre': nombre,
+      'categoria': categoria,
+      'descripcion': descripcion,
+      'ingredientes': ingredientes,
+      'pasos': pasos,
+      'herramientas': herramientas,
+    };
+  }
+
+  static Bebida fromMap(Map<dynamic, dynamic> map) {
+    return Bebida(
+      nombre: map['nombre'] ?? '',
+      categoria: map['categoria'] ?? '',
+      descripcion: map['descripcion'] ?? '',
+      ingredientes: List<String>.from(map['ingredientes'] ?? []),
+      pasos: map['pasos'] ?? '',
+      herramientas: List<String>.from(map['herramientas'] ?? []),
+    );
+  }
 }

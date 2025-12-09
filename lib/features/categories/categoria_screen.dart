@@ -6,7 +6,6 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:la_barra/core/widgets/empty_state.dart';
 import 'package:la_barra/core/widgets/app_footer.dart';
 import 'package:la_barra/core/widgets/trago_detalle_screen.dart';
-import 'package:la_barra/features/categories/tragos_por_categoria.dart';
 import 'package:la_barra/providers/favorites_provider.dart';
 
 class CategoriaScreen extends StatefulWidget {

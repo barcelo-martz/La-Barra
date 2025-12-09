@@ -16,4 +16,10 @@ class FavoritosProvider extends ChangeNotifier {
   }
 
   bool esFavorito(TragoCategoria trago) => _favoritos.contains(trago);
+
+  /// Elimina todos los favoritos
+  void clearAll() {
+    _favoritos.clear();
+    notifyListeners();
+  }
 }

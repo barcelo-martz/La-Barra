@@ -22,7 +22,7 @@ class BebidaCard extends StatelessWidget {
         );
       },
       child: Card(
-        color: const Color(0xFFFFEBEE),
+        color: Theme.of(context).cardColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         margin: const EdgeInsets.only(bottom: 12),
         child: Padding(
@@ -32,12 +32,12 @@ class BebidaCard extends StatelessWidget {
             children: [
               Text(
                 bebida.nombre,
-                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 6),
-              Text('Categoría: ${bebida.categoria}'),
+              Text('Categoría: ${bebida.categoria}', style: Theme.of(context).textTheme.bodyMedium),
               const SizedBox(height: 4),
-              Text('Descripción: ${bebida.descripcion}'),
+              Text('Descripción: ${bebida.descripcion}', style: Theme.of(context).textTheme.bodyMedium),
             ],
           ),
         ),

@@ -65,7 +65,7 @@ class TragoDetalleScreen extends StatelessWidget {
           ),
           const Divider(height: 32),
 
-          Row(
+          const Row(
             children: [
               Icon(Icons.kitchen, color: colorScheme.secondary),
               const SizedBox(width: 8),
@@ -76,7 +76,7 @@ class TragoDetalleScreen extends StatelessWidget {
           ...trago.ingredientes.map((i) => Text('• $i', style: textTheme.bodyMedium)),
           const Divider(height: 32),
 
-          Row(
+          const Row(
             children: [
               Icon(Icons.menu_book, color: colorScheme.secondary),
               const SizedBox(width: 8),
@@ -87,7 +87,7 @@ class TragoDetalleScreen extends StatelessWidget {
           Text(trago.preparacion, style: textTheme.bodyMedium),
           const Divider(height: 32),
 
-          Row(
+          const Row(
             children: [
               Icon(Icons.build, color: colorScheme.secondary),
               const SizedBox(width: 8),

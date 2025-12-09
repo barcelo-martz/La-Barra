@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:la_barra/models/trago_categoria.dart';
 import 'package:provider/provider.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+
+import 'package:la_barra/core/widgets/empty_state.dart';
 import 'package:la_barra/core/widgets/app_footer.dart';
 import 'package:la_barra/core/widgets/trago_detalle_screen.dart';
-import 'package:la_barra/features/categories/tragos_por_categoria.dart';
 import 'package:la_barra/providers/favorites_provider.dart';
 
 class CategoriaScreen extends StatefulWidget {
@@ -36,19 +39,33 @@ class _CategoriaScreenState extends State<CategoriaScreen> {
   @override
   Widget build(BuildContext context) {
     final favoritos = context.watch<FavoritosProvider>();
-    final todos = tragosPorCategoria[widget.categoria] ?? [];
+    //final todos = tragosPorCategoria[widget.categoria] ?? [];
+    final box = Hive.box<TragoCategoria>('tragos');
 
     // Filtro simple por búsqueda (por nombre y descripción)
+    //final query = _searchController.text.trim().toLowerCase();
+    //final tragos = query.isEmpty
+    //    ? todos
+    //    : todos.where((t) {
+    //        return t.nombre.toLowerCase().contains(query) ||
+    //            t.descripcion.toLowerCase().contains(query);
+    //      }).toList();
+
+   // Todos los tragos de la categoría seleccionada
+    final todos = box.values
+        .where((t) => t.categoria == widget.categoria)
+        .toList();
+
     final query = _searchController.text.trim().toLowerCase();
     final tragos = query.isEmpty
         ? todos
-        : todos.where((t) {
-            return t.nombre.toLowerCase().contains(query) ||
-                t.descripcion.toLowerCase().contains(query);
-          }).toList();
+        : todos.where((t) =>
+            t.nombre.toLowerCase().contains(query) ||
+            t.descripcion.toLowerCase().contains(query) ||
+            t.ingredientes.any((ing) => ing.toLowerCase().contains(query))
+          ).toList();   
 
     return Scaffold(
-      // Drawer propio para que el ícono de menú funcione en esta ruta
       drawer: _buildDrawer(context),
 
       appBar: AppBar(
@@ -90,7 +107,9 @@ class _CategoriaScreenState extends State<CategoriaScreen> {
 
       body: Padding(
         padding: const EdgeInsets.all(16),
-        child: ListView.builder(
+        child: tragos.isEmpty
+        ? EmptyState()
+        /* child */: ListView.builder(
           itemCount: tragos.length,
           itemBuilder: (_, i) {
             final trago = tragos[i];
@@ -118,7 +137,7 @@ class _CategoriaScreenState extends State<CategoriaScreen> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(8),
                         child: Image.asset(
-                          'assets/images/carrusel3.jpeg',
+                          trago.imagen,
                           width: 80,
                           height: 80,
                           fit: BoxFit.cover,
@@ -167,6 +186,13 @@ class _CategoriaScreenState extends State<CategoriaScreen> {
   }
 
   Widget _buildDrawer(BuildContext context) {
+
+      // Extraemos categorías únicas desde Hive
+    final box = Hive.box<TragoCategoria>('tragos');
+    final categorias = box.values.map((t) => t.categoria).toSet().toList();
+
+    categorias.sort((a, b)=> a.compareTo(b));
+
     return Drawer(
       child: SafeArea(
         child: Column(
@@ -198,13 +224,14 @@ class _CategoriaScreenState extends State<CategoriaScreen> {
                 ],
               ),
             ),
+            //////////////////////////////////////////////////////////
             const Divider(),
             _drawerItem(context, 'Clásicos', Icons.local_bar),
           _drawerItem(context, 'Tropicales', Icons.beach_access),
-          _drawerItem(context, 'De Autor', Icons.star),
+          _drawerItem(context, 'Modernos', Icons.star),
           _drawerItem(context, 'Sin Alcohol', Icons.no_drinks),
           _drawerItem(context, 'De Temporada', Icons.calendar_today),
-          _drawerItem(context, 'Postres', Icons.icecream),
+          _drawerItem(context, 'Postres o Dulces', Icons.icecream),
           _drawerItem(context, 'Shots', Icons.bolt),
             //const Divider(),
             const Spacer(),

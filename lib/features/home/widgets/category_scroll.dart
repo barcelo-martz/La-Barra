@@ -6,19 +6,18 @@ class CategoryScroll extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Lista de categorías con su imagen y nombre
     final categories = [
-      {'name': 'Clásicos', 'image': 'assets/images/categoria1.jpeg'},
-      {'name': 'Tropicales', 'image': 'assets/images/categoria2.jpeg'},
-      {'name': 'De Autor', 'image': 'assets/images/categoria3.jpeg'},
-      {'name': 'Sin Alcohol', 'image': 'assets/images/categoria4.jpeg'},
-      {'name': 'De Temporada', 'image': 'assets/images/categoria5.jpeg'},
-      {'name': 'Postres', 'image': 'assets/images/categoria6.jpeg'},
-      {'name': 'Shots', 'image': 'assets/images/categoria1.jpeg'},
+      {'name': 'Clásicos', 'image': 'assets/images/Mojito.jpg'},
+      {'name': 'Tropicales', 'image': 'assets/images/dd45d054dfce696b68bc0b43a11d1bfe_M.jpg'},
+      {'name': 'Modernos', 'image': 'assets/images/57-Chevy-Drink-Cocktail-with-Southern-Comfort.jpg'},
+      {'name': 'Sin Alcohol', 'image': 'assets/images/Non-Alcoholic_Mulled_Wine.jpg'},
+      {'name': 'De Temporada', 'image': 'assets/images/Autumn_Spice.jpg'},
+      {'name': 'Postres o Dulces', 'image': 'assets/images/crema-papaya-servida-licor-cassis-cerrar_519721-867.jpg'},
+      {'name': 'Shots', 'image': 'assets/images/verdita.jpeg'},
     ];
 
     return SizedBox(
-      height: 160, // altura para una sola fila
+      height: 160, 
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 16),

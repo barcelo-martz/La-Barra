@@ -13,18 +13,20 @@ class BebidaDetalleScreen extends StatelessWidget {
     final provider = context.watch<BebidaProvider>();
     final bebida = provider.bebidas[index];
 
+    final theme = Theme.of(context);
     return Scaffold(
-      backgroundColor: const Color(0xFFFFEBEE),
+      // Use theme background so dark mode is respected
+      backgroundColor: theme.scaffoldBackgroundColor,
       appBar: AppBar(
         title: Text(bebida.nombre),
-        backgroundColor: const Color(0xFFE53935),
-        foregroundColor: Colors.white,
+        backgroundColor: theme.colorScheme.primary,
+        foregroundColor: theme.colorScheme.onPrimary,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: theme.cardColor,
             borderRadius: BorderRadius.circular(16),
             boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 6)],
           ),
@@ -36,17 +38,17 @@ class BebidaDetalleScreen extends StatelessWidget {
                 children: [
                   Text(
                     bebida.nombre,
-                    style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                    style: theme.textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
                   ),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
-                      color: Colors.redAccent,
+                      color: theme.colorScheme.secondary,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
                       bebida.categoria,
-                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                      style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSecondary, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
@@ -54,45 +56,39 @@ class BebidaDetalleScreen extends StatelessWidget {
               const SizedBox(height: 12),
               Text(
                 bebida.descripcion,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontStyle: FontStyle.italic,
-                  color: Colors.black87,
-                ),
+                style: theme.textTheme.bodyMedium?.copyWith(fontStyle: FontStyle.italic),
               ),
               const Divider(height: 32),
-
-              const Row(
+              Row(
                 children: [
-                  Icon(Icons.kitchen, color: Colors.redAccent),
-                  SizedBox(width: 8),
-                  Text('Ingredientes', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  Icon(Icons.kitchen, color: theme.colorScheme.secondary),
+                  const SizedBox(width: 8),
+                  Text('Ingredientes', style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold)),
                 ],
               ),
               const SizedBox(height: 8),
-              ...bebida.ingredientes.map((i) => Text('• $i')),
+              ...bebida.ingredientes.map((i) => Text('• $i', style: theme.textTheme.bodyMedium)),
               const Divider(height: 32),
-
-              const Row(
+              Row(
                 children: [
-                  Icon(Icons.menu_book, color: Colors.redAccent),
-                  SizedBox(width: 8),
-                  Text('Preparación', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  Icon(Icons.menu_book, color: theme.colorScheme.secondary),
+                  const SizedBox(width: 8),
+                  Text('Preparación', style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold)),
                 ],
               ),
               const SizedBox(height: 8),
-              Text(bebida.pasos),
+              Text(bebida.pasos, style: theme.textTheme.bodyMedium),
               const Divider(height: 32),
 
-              const Row(
+              Row(
                 children: [
-                  Icon(Icons.build, color: Colors.redAccent),
-                  SizedBox(width: 8),
-                  Text('Herramientas', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  Icon(Icons.build, color: theme.colorScheme.secondary),
+                  const SizedBox(width: 8),
+                  Text('Herramientas', style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold)),
                 ],
               ),
               const SizedBox(height: 8),
-              ...bebida.herramientas.map((h) => Text('• $h')),
+              ...bebida.herramientas.map((h) => Text('• $h', style: theme.textTheme.bodyMedium)),
             ],
           ),
         ),
@@ -102,7 +98,7 @@ class BebidaDetalleScreen extends StatelessWidget {
         children: [
           FloatingActionButton(
             heroTag: 'edit',
-            backgroundColor: Colors.orange,
+            backgroundColor: theme.colorScheme.secondary,
             child: const Icon(Icons.edit),
             onPressed: () {
               Navigator.push(
@@ -116,7 +112,7 @@ class BebidaDetalleScreen extends StatelessWidget {
           const SizedBox(height: 12),
           FloatingActionButton(
             heroTag: 'delete',
-            backgroundColor: Colors.red,
+            backgroundColor: theme.colorScheme.error,
             child: const Icon(Icons.delete),
             onPressed: () {
               provider.eliminarBebida(bebida);

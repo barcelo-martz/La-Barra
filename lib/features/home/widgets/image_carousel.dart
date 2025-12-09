@@ -22,7 +22,6 @@ class _ImageCarouselState extends State<ImageCarousel> {
   @override
   void initState() {
     super.initState();
-    // Avanza automáticamente cada 3 segundos
     _timer = Timer.periodic(const Duration(seconds: 3), (_) {
       final next = (_current + 1) % images.length;
       _controller.animateToPage(

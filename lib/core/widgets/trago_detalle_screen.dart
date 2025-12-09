@@ -13,22 +13,23 @@ class TragoDetalleScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final favoritos = context.watch<FavoritosProvider>();
     final esFavorito = favoritos.esFavorito(trago);
+    final colorScheme = Theme.of(context).colorScheme;
+    final textTheme = Theme.of(context).textTheme;
 
     return Scaffold(
-      backgroundColor: const Color(0xFFFFEBEE),
+      backgroundColor: colorScheme.background,
       appBar: AppBar(
         title: Text(trago.nombre),
-        backgroundColor: const Color(0xFFE53935),
-        foregroundColor: Colors.white,
+        backgroundColor: colorScheme.primary,
+        foregroundColor: colorScheme.onPrimary,
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // Imagen al inicio
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
             child: Image.asset(
-              'assets/images/carrusel3.jpeg',
+              trago.imagen,
               height: 200,
               width: double.infinity,
               fit: BoxFit.cover,
@@ -36,83 +37,73 @@ class TragoDetalleScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
 
-          // Nombre y categoría
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 trago.nombre,
-                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: textTheme.headlineSmall?.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(
-                  color: Colors.redAccent,
+                  color: colorScheme.primary,
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text(
                   trago.categoria,
-                  style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                  style: textTheme.labelLarge?.copyWith(color: colorScheme.onPrimary, fontWeight: FontWeight.bold),
                 ),
               ),
             ],
           ),
           const SizedBox(height: 12),
 
-          // Descripción
           Text(
             trago.descripcion,
-            style: const TextStyle(
-              fontSize: 16,
-              fontStyle: FontStyle.italic,
-              color: Colors.black87,
-            ),
+            style: textTheme.bodyMedium?.copyWith(fontSize: 16, fontStyle: FontStyle.italic),
           ),
           const Divider(height: 32),
 
-          // Ingredientes
-          const Row(
+          Row(
             children: [
-              Icon(Icons.kitchen, color: Colors.redAccent),
-              SizedBox(width: 8),
-              Text('Ingredientes', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              Icon(Icons.kitchen, color: colorScheme.secondary),
+              const SizedBox(width: 8),
+              Text('Ingredientes', style: textTheme.titleMedium?.copyWith(fontSize: 18, fontWeight: FontWeight.bold)),
             ],
           ),
           const SizedBox(height: 8),
-          ...trago.ingredientes.map((i) => Text('• $i')),
+          ...trago.ingredientes.map((i) => Text('• $i', style: textTheme.bodyMedium)),
           const Divider(height: 32),
 
-          // Preparación
-          const Row(
+          Row(
             children: [
-              Icon(Icons.menu_book, color: Colors.redAccent),
-              SizedBox(width: 8),
-              Text('Preparación', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              Icon(Icons.menu_book, color: colorScheme.secondary),
+              const SizedBox(width: 8),
+              Text('Preparación', style: textTheme.titleMedium?.copyWith(fontSize: 18, fontWeight: FontWeight.bold)),
             ],
           ),
           const SizedBox(height: 8),
-          Text(trago.preparacion),
+          Text(trago.preparacion, style: textTheme.bodyMedium),
           const Divider(height: 32),
 
-          // Herramientas
-          const Row(
+          Row(
             children: [
-              Icon(Icons.build, color: Colors.redAccent),
-              SizedBox(width: 8),
-              Text('Herramientas', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              Icon(Icons.build, color: colorScheme.secondary),
+              const SizedBox(width: 8),
+              Text('Herramientas', style: textTheme.titleMedium?.copyWith(fontSize: 18, fontWeight: FontWeight.bold)),
             ],
           ),
           const SizedBox(height: 8),
-          ...trago.herramientas.map((h) => Text('• $h')),
+          ...trago.herramientas.map((h) => Text('• $h', style: textTheme.bodyMedium)),
         ],
       ),
 
-      // Solo botón de favoritos
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.redAccent,
+        backgroundColor: colorScheme.secondary,
         child: Icon(
           esFavorito ? Icons.favorite : Icons.favorite_border,
-          color: Colors.white,
+          color: colorScheme.onSecondary,
         ),
         onPressed: () => favoritos.toggleFavorito(trago),
       ),
